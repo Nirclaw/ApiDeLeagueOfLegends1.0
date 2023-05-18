@@ -40,7 +40,7 @@ function mostrarinfo(data) {
                 </div>
                 </section> `;
    
-  }
+  } 
   console.log(vacio);
 document.getElementById("mostrar").innerHTML+=vacio
 
