@@ -1,6 +1,12 @@
 const url = `http://ddragon.leagueoflegends.com/cdn/13.10.1/data/es_MX/champion.json`;
+const options = {
+  method: "GET",
+  Headers:{
+    "Content-Type": "application/json","Access-Control-Allow-Origin": "https://nirclaw.github.io/ApiDeLeagueOfLegends1.0/"
+  }
+};
 
-fetch(url)
+fetch(url,options)
   .then((res) => res.json())
   .then((data) => mostrarnombre(data));
 
@@ -9,7 +15,7 @@ function mostrarnombre(data) {
 
   for (const iterator of nombres) {
     let url2 = `http://ddragon.leagueoflegends.com/cdn/13.10.1/data/es_MX/champion/${iterator}.json`;
-    fetch(url2)
+    fetch(url2,options)
       .then((res) => res.json())
       .then((data) => mostrarinfo(data));
   }
@@ -33,13 +39,13 @@ function mostrarinfo(data) {
             <p>${origen}</p>  
             <p>${rol}</p>  
 
-        <a href="#">Jugar</a>
+        <a href="http://ddragon.leagueoflegends.com/cdn/img/champion/splash/${ID}_0.jpg" target="_blanck">img completa</a>
         </div>
         <div class="visual">
              <img src="${imgen}" alt="" />
         </div>
          </section> `;
   }
-  console.log(vacio);
+
   document.getElementById("mostrar").innerHTML += vacio;
 }
