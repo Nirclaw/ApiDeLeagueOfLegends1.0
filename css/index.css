@@ -48,12 +48,17 @@ section.card {
     top: -24px;
     left: 24px;
     overflow: hidden;
+
     border-radius: 24px;
     box-shadow: 1px 2px 6px rgba(255, 255, 255, 0.25), 2px 6px 12px rgba(0, 0, 0, 0.25);
   }
   section.card .visual img {
     height: 110%;
+    
   }
+section.card .visual:hover{
+scale: 2;
+}
   section.card:nth-of-type(odd) {
     margin: 0 0 0 248px;
     border-radius: 24px 24px 48px 24px;

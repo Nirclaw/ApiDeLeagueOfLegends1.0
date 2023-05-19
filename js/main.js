@@ -19,9 +19,9 @@ function mostrarinfo(data) {
   let vacio = " ";
   const personajes = data.data;
   const infoPerosnajes = Object.values(personajes);
-  
+
   for (let i = 0; i < infoPerosnajes.length; i++) {
-    const ID = infoPerosnajes[i].id
+    const ID = infoPerosnajes[i].id;
     const nombre = infoPerosnajes[i].name;
     const origen = infoPerosnajes[i].blurb;
     const rol = (infoPerosnajes[i].tags[0], infoPerosnajes[i].tags[1]);
@@ -37,11 +37,9 @@ function mostrarinfo(data) {
         </div>
         <div class="visual">
              <img src="${imgen}" alt="" />
-                </div>
-                </section> `;
-   
-  } 
+        </div>
+         </section> `;
+  }
   console.log(vacio);
-document.getElementById("mostrar").innerHTML+=vacio
-
+  document.getElementById("mostrar").innerHTML += vacio;
 }
