@@ -1,7 +1,7 @@
 
 
 section.card {
-    background: #f6f6f6;
+    background-image: url(https://img.freepik.com/free-vector/red-black-abstract-grunge-texture-background_1017-28557.jpg?w=826&t=st=1684534035~exp=1684534635~hmac=21c2f0c7bc4f42f362054de7ae76612ab012cf6c01ee9e4b79be66dcab4dd584);
     border-radius: 24px 24px 24px 48px;
     padding: 48px 48px 48px 308px;
     margin: 84px 0;
@@ -48,7 +48,8 @@ section.card {
     top: -24px;
     left: 24px;
     overflow: hidden;
-filter: blur(2px);
+  filter: blur(2px);
+  transition: 0.2s;
 
     border-radius: 24px;
   }
